@@ -1,4 +1,4 @@
-// This is the CPP file you will edit and turn in. (TODO: Remove this comment!)
+// Anisha Jain (anishax) and Arshin Jain (arshinx)
 
 #include <iostream>
 #include "console.h"
