@@ -1,0 +1,23 @@
+A file detailing a bug we encountered in this assignment and how we approached debugging it:
+
+Problem:
+
+There was an infinite loop when printing ‘error notes’ for the user upon invalid input. 
+This error seemed to be a fundamental problem with the way the functions were structured.
+
+Approach:
+To identify the root of the problem, we added print statements at various spots in the code. 
+This allowed us to identify the function and the loop which was causing these infinite print statements. 
+For each word input, this function was being called repeatedly.
+
+Solution:
+Creating an additional helper function for the error prints, and altering their position in the while loop fixed the problem. 
+Since it was a nested while loop, the location had to be altered to be just before the ladder was called, and to re-prompt 
+the user just after it.
+
+Learning:
+Planning out the helper functions with a Top-Down model would prevent such issues from emerging.
+
+Partners:
+
+Anisha Jain (anishax@stanford.edu) and Arshin Jain (arshin@stanford.edu)
